@@ -1,0 +1,195 @@
+.news {
+  padding: 50px 0 80px 0;
+}
+
+.news-title {
+  text-align: left;
+}
+
+.news-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 -15px 50px -15px;
+}
+
+.news-block {
+  width: 33.3333%;
+  margin-top: 30px;
+  padding: 0 15px;
+}
+
+.news-item {
+  width: 100%;
+  margin: 0;
+}
+
+.news-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.news-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.news-link:hover {
+  text-decoration: none;
+}
+
+.news-link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  min-height: 40px;
+  text-decoration: none;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #212121;
+  border: 1px solid #212121;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.news-link a:hover {
+  text-decoration: none;
+  color: #00A0E3;
+  border: 1px solid #00A0E3;
+}
+
+@media (max-width: 1200px) {
+  .news-info {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .news {
+    padding: 30px 0 30px 0;
+  }
+  .news-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 -10px 30px -10px;
+  }
+  .news-title {
+    text-align: center;
+    margin: 0;
+  }
+  .news-block {
+    width: 50%;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  .news-subtitle {
+    font-size: 17px;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto 30px;
+  }
+  .news-info {
+    padding: 15px 15px;
+  }
+  .news-title {
+    font-size: 30px;
+    line-height: normal;
+  }
+  .news-block {
+    width: 50%;
+  }
+  .news-item {
+    max-width: 100%;
+  }
+  .news-description {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .news {
+    padding: 30px 0 40px 0;
+  }
+  .news-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0px 20px 0px;
+  }
+  .news-block {
+    width: 75%;
+    max-width: 100%;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .news-item {
+    height: auto;
+  }
+  .news-info {
+    padding: 15px 15px;
+  }
+  .news-description {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .news {
+    padding: 20px 0 40px 0;
+  }
+  .news-title {
+    font-size: 28px;
+  }
+  .news-block {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=page-news.css.map */

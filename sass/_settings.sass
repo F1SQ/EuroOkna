@@ -1,0 +1,394 @@
+@font-face
+  font-family: 'Roboto'
+  src: url("../fonts/Roboto.woff2") format("woff2")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'Roboto'
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2")
+  font-weight: 500
+  font-style: normal
+
+@font-face
+  font-family: 'Ubuntu'
+  src: url("../fonts/Ubuntu-Regular.woff2") format("woff2")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'Ubuntu'
+  src: url("../fonts/Ubuntu-Medium.woff2") format("woff2")
+  font-weight: 500
+  font-style: normal
+
+@font-face
+  font-family: 'Ubuntu'
+  src: url("../fonts/Ubuntu-Bold.woff2") format("woff2")
+  font-weight: bold
+  font-style: normal
+
+@font-face
+  font-family: 'Ubuntu'
+  src: url('../fonts/Ubuntu-Light.woff2') format('woff2')
+  font-weight: 300
+  font-style: normal
+
+body
+  font-family: 'Ubuntu', sans-serif
+
+.container
+  width: 1170px
+  margin: 0 auto
+  max-width: 100%
+
+.ibg
+  position: relative
+  z-index: -2
+  img
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    object-fit: cover
+
+.form
+  &--hidden
+    display: none
+  &-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 20px 50px
+    width: 400px
+    // height: 360px
+    background: #FFFFFF
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1)
+    border-radius: 8px
+  &__title
+    color: #212121
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 18px
+    margin: 0 0 25px 0
+    text-align: center
+  &__input
+    border: 1px solid rgba(0, 0, 0, 0.15)
+    box-sizing: border-box
+    border-radius: 8px
+    padding: 16px 25px
+    margin: 0 0 25px 0
+    width: 100%
+    &:focus
+      outline: none
+    &--name
+
+    &--phone
+    &--message
+      min-height: 120px
+      resize: none
+
+  &__accept
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 14px
+
+  &__button
+    display: flex
+    justify-content: center
+    align-items: center
+    min-width: 230px
+    min-height: 50px
+    margin: 0 auto
+    padding: 17px
+    color: #fff
+    background: #00A0E3
+    border: 1px solid #00A0E3
+    box-sizing: border-box
+    border-radius: 5px
+    text-decoration: none
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 16px
+    text-transform: uppercase
+    transition: all 200ms linear
+    cursor: pointer
+    &:hover
+      background: darken(#00A0E3, 10%)
+
+.modal
+  &-checkbox
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    margin-bottom: 27px
+    cursor: pointer
+    input
+      width: 16px
+      height: 16px
+      position: absolute
+      left: 0
+      top: 0
+      opacity: 0
+    b
+      width: 16px
+      min-width: 16px
+      height: 16px
+      background: #fff
+      border-radius: 2px
+      margin: 0 11px 0 0
+      -webkit-transition: all 0.4s
+      -o-transition: all 0.4s
+      transition: all 0.4s
+      position: relative
+      border: 1px solid rgba(0, 0, 0, 0.15)
+      box-sizing: border-box
+
+    b::before
+      content: ""
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background-repeat: no-repeat
+      background-position: center
+      background-image: url("../img/checkbox.svg")
+      opacity: 0
+      -webkit-transition: all 0.4s
+      -o-transition: all 0.4s
+      transition: all 0.4s
+    input:checked + b
+      background: #00A0E3
+      &::before
+        opacity: 1
+
+.title
+  font-family: Roboto
+  font-style: normal
+  font-weight: 500
+  font-size: 36px
+  line-height: 42px
+  text-align: center
+  color: #212121
+  &__line
+    align-self: center
+    display: block
+    width: 40px
+    height: 1px
+    background-color: #00A0E3
+    margin-bottom: 55px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 5px
+      left: 10px
+      width: 20px
+      height: 1px
+      background-color: #00A0E3
+    &::after
+      content: ''
+      position: absolute
+      top: -5px
+      left: -10px
+      width: 60px
+      height: 1px
+      background-color: #00A0E3
+
+.header
+  &-bottom
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    height: 60px
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+    &__nav
+      display: flex
+      list-style: none
+      margin: 0
+      padding: 0
+      li
+        // margin-right: 5px
+        font-size: 16px
+        line-height: 19px
+        &:not(:last-child)
+          margin-right: 16px
+        a
+          font-size: 16px
+          line-height: 19px
+          text-decoration: none
+          transition: all 0.2s
+          color: #212121
+          position: relative
+          &::after
+            content: '>'
+            position: absolute
+            top: 0
+            right: -12px
+          &:hover
+            color: #00A0E3
+        &:last-child
+          color: #00A0E3
+
+.catalog
+  font-family: Roboto
+  font-style: normal
+  padding: 50px 0 80px 0
+  &-wrapper
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    color: #212121
+  &-title
+    font-weight: 500
+    font-size: 36px
+    line-height: 42px
+    margin: 0 0 50px 0
+
+  &-content
+    width: 100%
+    display: flex
+    align-items: flex-start
+  &-menu
+    margin-right: 50px
+  &-products
+    max-width: 100%
+    width: 320px
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15)
+    border-radius: 8px
+    margin-bottom: 30px
+
+  &-menu
+    margin-right: 50px
+  &-products
+    width: 320px
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15)
+    border-radius: 8px
+    margin-bottom: 30px
+  &-product
+    &__list
+      padding: 0
+      display: flex
+      flex-direction: column
+      margin: 0
+      list-style: none
+      // padding: 15px 30px
+      li
+        padding: 15px 27px 15px 30px
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+        &::first-child
+          margin-bottom: 15px
+          // border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+        a
+          display: flex
+          justify-content: space-between
+          text-decoration: none
+          color: #212121
+          font-weight: normal
+          font-size: 16px
+          line-height: 19px
+          transition: hover 0.2s
+          &:hover
+            color: darken(#00A0E3, 10%)
+            img
+              filter: brightness(0.8)
+
+          img
+            transition: all 0.2s
+            filter: brightness(0)
+        ul
+          display: none
+          list-style: none
+          padding: 0
+          margin-top: 15px
+          li
+            border: none
+            padding: 0
+            a
+              font-weight: normal
+              font-size: 14px
+              line-height: 16px
+              color: rgba(33, 33, 33, 0.5)
+              transition: all 0.2s
+            &:not(:first-child)
+              margin-top: 10px
+    &__link
+    &__item
+      &:not(:first-child)
+        margin: 10px 0 0 0
+    &__link
+      color: rgba(33, 33, 33, 0.5)
+      transition: all 0.2s
+      text-decoration: none
+      cursor: pointer
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 16px
+      &:hover
+        color: darken(#00A0E3, 10%)
+  &-buttons
+    max-width: 318px
+    border: 1px solid rgba(0, 0, 0, 0.05)
+    box-sizing: border-box
+    border-radius: 8px
+    overflow: hidden
+    &__button
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      max-width: 100%
+      width: 100%
+      min-height: 66px
+      padding: 15px 15px 15px 50px
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 22px
+      text-transform: uppercase
+      text-decoration: none
+      transition: all 0.3s
+      cursor: pointer
+      color: #00A0E3
+      &:nth-child(1)
+        border-radius: 8px 8px 0 0
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+      &:nth-child(2)
+        border-radius: 0 0 8px 8px
+      img
+        margin-right: 16px
+      &:hover
+        background: #00A0E3
+        color: #fff
+        img
+          -webkit-filter: brightness(0) invert(1)
+          filter: brightness(0) invert(1)
+
+.catalog
+  &-product
+    &__list
+      li.active
+        a
+          color: #00A0E3
+          img
+            filter: brightness(1)
+            transform: rotate(90deg)
+        li
+          a
+            color: rgba(33, 33, 33, 0.5)
+            &:hover
+              color: darken(#00A0E3, 10%)

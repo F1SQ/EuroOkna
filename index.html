@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЕвроОкна</title>
+  <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="header-mobile">
+      <div class="container header-mobile__container">
+        <div class="header-mobile__menu">
+          <div class="header-mobile__logo">
+            <a href="#"><img src="/img/header-logo.png" alt="logo"></a>
+          </div>
+          <!-- /.header-mobile__menu -->
+          <ul class="header-mobile__nav">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+    
+          <div class="header-mobile__contacts">
+            <div class="header-mobile__contacts__item">
+              <a href="tel:79882917390" class="header-mobile__contacts__tel"><img src="/img/header-icon-phone.png" alt="icon: phone"
+                  class="header-contacts__icon"><span><b>+7 (988) </b>291-73-90</span></a>    
+            </div>
+            
+            <div class="header-mobile__contacts__item">
+              <img src="/img/header-icon-marker.png" alt="icon: marker" class="header-mobile__contacts__icon"><span
+                class="header-mobile__contacts__adress">г.Махачкала, ул.Ирчи-Казака 1Д</span>
+            </div>
+
+          </div>
+          <!-- /.header-mobile__contacts-->
+          <a href="#form" data-fancybox data-touch="false" class="header-mobile__button button_secondary">Перезвоните мне</a>
+    
+          <div class="header-mobile__close"><img src="/img/mobile-menu-button.svg" alt="icon: close"></div>
+
+        </div>
+        <!-- /.header-mobile__menu -->
+      </div>
+      <!-- /.container-->
+    </div>
+    <!-- /.header-mobile-->
+
+
+  <header class="header header__mobile--fixed">
+    <div class="container">
+      <div class="header__menu">
+        <div class="logo header__logo">
+          <a href="#"><img src="/img/header-logo.png" alt="logo"></a>
+        </div>
+        <!-- /.logo header__logo -->
+        <ul class="header-nav">
+          <li><a href="#">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Контакты</a></li> 
+        </ul>
+
+          <div class="header-contacts">
+            <div class="header-contacts__item">
+              <a href="tel:79882917390" class="header-contacts__tel"><img src="/img/header-icon-phone.png" alt="icon: phone" class="header-contacts__icon"><span><b>+7 (988) </b>291-73-90</span></a>
+              
+            </div>
+            <div class="header-contacts__item">
+              <img src="/img/header-icon-marker.png" alt="icon: marker" class="header-contacts__icon"><span class="header-contacts__adress">г.Махачкала, ул.Ирчи-Казака 1Д</span>  
+            </div>
+          </div>
+          <!-- /.contacts header__contacts -->
+          <a href="#form" data-fancybox data-touch="false" class="header__button button_secondary">Перезвоните мне</a>
+
+          <button class="header-nav__button">
+            <span class="header-nav__button__line"></span>
+            <span class="header-nav__button__line"></span>
+            <span class="header-nav__button__line"></span>
+          </button>
+      </div>
+      <!-- /.header-menu -->
+    </div>
+    <!-- /.container header_container -->
+  </header>
+
+  <section class="main"> 
+    <div class="container">
+      <div class="main-content">
+        <div class="main-info">
+          <h1 class="main__title"><span>Производство</span> алюминиевых <br> конструкций, окон и дверей. <br> Окна и двери из <span>ПВХ</span></h1>
+          <div class="main-info__buttons">
+            <a href="#" class="main-button">Рассчитать стоимость</a>
+            <a href="#" class="main-button main-button--secondary">Перейти в каталог</a>
+          </div>
+          <!-- /.main-info__buttons -->
+        </div>
+        <!-- /.main-info -->
+        <div class="request">
+          <h2 class="request__title">Оставьте свои контактные данные <br> и мы свяжемся с Вами</h2>
+          <form action="#" class="request-form">
+            <input 
+            type="text" 
+            class="request__input request__input--name" 
+            placeholder="Ваше имя*"
+            name="name"
+            required>
+            <input 
+            type="tel" 
+            class="request__input request__input--phone" 
+            placeholder="Ваш телефон*" 
+            name="phone"
+            required>
+
+          <label class="modal-checkbox">
+            <input type="checkbox" checked required>
+            <b></b>
+            <span class="request__accept">Я согласен(сна) на обработку персональных данных в соответствии с компании.</span>
+          </label>
+
+            <button class="request__button">Заказать звонок</button>            
+          </form>
+        </div>
+        <!-- /.main-request -->
+      </div>
+      <!-- /.main-content -->
+    </div>
+    <!-- /.container -->
+      <div class="main-contacts">
+        <a href="#" class="main-contacts__item"><img src="/img/main-icon-phone.svg" alt="icon: phone"
+            class="main-contacts__icon"></a>
+        <a href="#form" data-fancybox data-touch="false" class="main-contacts__item"><img src="/img/main-icon-mail.svg" alt="icon: mail"
+            class="main-contacts__icon"></a>
+      </div>
+      <!-- /.main-contacts -->
+      <div class="main-image ibg">
+        <img src="/img/main-background.jpg" alt="image: background">
+      </div>
+      <!-- /.main-image -->
+  </section>
+
+  <div class="calculator">
+    <div class="container calculator__container">
+      <div class="calculator__wrapper">
+        <div class="calculator__info">
+          <p class="calculator__description">Пройдите
+          <span class="calculator__description--color">бесплатный</span> тест-калькулятор и <br>
+          <span class="calculator__description--bold">Получите предварительный расчёт стоимости за
+          <span class="calculator__description--color">30 секунд</span></span><br>
+          </p>
+        </div>
+        <!-- /.calculator__info -->
+        <form action="#" class="calculator-list">
+          <div class="calculator-wrapper active">
+            <span class="calculator__text">Выберите тип конструкции</span>
+            <div class="calculator__menu">
+          
+              <div class="calculator-label__block">
+                <label class="radio step-start" data-index="1">
+                  <input type="radio" name="type" checked>
+                  <b></b>
+                  <img src="/img/calculator-windows.svg" alt="icon: windows">
+                  <span>Окна</span>
+                </label>
+              </div>
+              <!-- /.calculator-label__block -->
+          
+              <div class="calculator-label__block">
+                <label class="radio step-start" data-index="2">
+                  <input type="radio" name="type">
+                  <b></b>
+                  <img src="/img/calculator-balcony-doors.svg" alt="icon: balcony-doors">
+                  <span>Балконные двери</span>
+                </label>
+              </div><!-- /.calculator-label__block -->
+          
+              <div class="calculator-label__block">
+                <label class="radio step-start" data-index="3">
+                  <input type="radio" name="type">
+                  <b></b>
+                  <img src="/img/calculator-balcons.svg" alt="icon: balcons">
+                  <span>Балконы</span>
+                </label>
+              </div><!-- /.calculator-label__block -->
+          
+              <div class="calculator-label__block">
+                <label class="radio step-start" data-index="4">
+                  <input type="radio" name="type">
+                  <b></b>
+                  <img src="/img/calculator-front-doors.svg" alt="icon: front-doors">
+                  <span>Входные двери</span>
+                </label>
+              </div>
+              <!-- /.calculator-label__block -->
+          
+              <div class="calculator__bottom">
+                <span class="calculator__steps">Шаг 1/4</span>
+                <div class="calculator-buttons">
+                  <a href="#" class="calculator__button calculator__button--secondary prev">Назад</a>
+                  <a href="#" class="calculator__button next">Далее</a>
+                </div>
+                <!-- /.calculator-buttons -->                
+              </div>
+              <!-- /.calculator__bottom -->
+            </div>
+            <!-- /.calculator__menu -->
+          </div>
+          <!-- /.calculator-wrapper-->
+          <div class="calculator-wrapper calculator-wrapper__second" >
+            <span class="calculator__text">Выберите тип конструкции</span>
+            <div class="calculator__menu calculator-stage__second">
+              <div class="calculator-stage__wrapper main-data-js" data-index="1">
+                <div class="calculator-stage__list" >
+                    <div class="calculator-label__block calculator-label__block__second">
+                      <label class="radio radio--second">
+                        <input type="radio" name="radio" checked>
+                        <b></b>
+                        <img src="/img/calculator-stage-image-1.png" class="stage-second__image" alt="image: windows">                  
+                      </label>
+                    </div>
+                    <!-- /.calculator-label__block  calculator-label__block__second-->             
+                    
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-2.png" class="stage-second__image" alt="image: windows">
+                    </label>
+                  </div><!-- /.calculator-label__block  calculator-label__block__second-->
+
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-3.png" alt="image: windows">
+                    </label>
+                  </div><!-- /.calculator-label__block  calculator-label__block__second-->
+
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-4.png" alt="image: windows">
+                    </label>
+                  </div>
+                  <!-- /.calculator-label__block calculator-label__block__second-->
+              </div>
+            <!-- /.calculator-stage__list --> 
+            </div>
+            <!-- /.calculator-stage__wrapper -->
+              <div class="calculator-stage__wrapper main-data-js" data-index="2">
+                <div class="calculator-stage__list" >
+                    <div class="calculator-label__block calculator-label__block__second">
+                      <label class="radio radio--second">
+                        <input type="radio" name="radio" checked>
+                        <b></b>
+                        <img src="/img/calculator-stage-image-1.png" class="stage-second__image" alt="image: windows">                  
+                      </label>
+                    </div>
+                    <!-- /.calculator-label__block  calculator-label__block__second-->             
+                    
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-2.png" class="stage-second__image" alt="image: windows">
+                    </label>
+                  </div><!-- /.calculator-label__block  calculator-label__block__second-->
+
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-3.png" alt="image: windows">
+                    </label>
+                  </div><!-- /.calculator-label__block  calculator-label__block__second-->
+
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-4.png" alt="image: windows">
+                    </label>
+                  </div>
+                  <!-- /.calculator-label__block calculator-label__block__second-->
+              </div>
+            <!-- /.calculator-stage__list --> 
+            </div>
+            <!-- /.calculator-stage__wrapper -->
+              <div class="calculator-stage__wrapper main-data-js" data-index="3">
+                <div class="calculator-stage__list" >
+                    <div class="calculator-label__block calculator-label__block__second">
+                      <label class="radio radio--second">
+                        <input type="radio" name="radio" checked>
+                        <b></b>
+                        <img src="/img/calculator-stage-image-1.png" class="stage-second__image" alt="image: windows">                  
+                      </label>
+                    </div>
+                    <!-- /.calculator-label__block  calculator-label__block__second-->             
+                    
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-2.png" class="stage-second__image" alt="image: windows">
+                    </label>
+                  </div><!-- /.calculator-label__block  calculator-label__block__second-->
+
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-3.png" alt="image: windows">
+                    </label>
+                  </div><!-- /.calculator-label__block  calculator-label__block__second-->
+
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-4.png" alt="image: windows">
+                    </label>
+                  </div>
+                  <!-- /.calculator-label__block calculator-label__block__second-->
+              </div>
+            <!-- /.calculator-stage__list --> 
+            </div>
+            <!-- /.calculator-stage__wrapper -->
+              <div class="calculator-stage__wrapper main-data-js" data-index="4">
+                <div class="calculator-stage__list" >
+                    <div class="calculator-label__block calculator-label__block__second">
+                      <label class="radio radio--second">
+                        <input type="radio" name="radio" checked>
+                        <b></b>
+                        <img src="/img/calculator-stage-image-1.png" class="stage-second__image" alt="image: windows">                  
+                      </label>
+                    </div>
+                    <!-- /.calculator-label__block  calculator-label__block__second-->             
+                    
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-2.png" class="stage-second__image" alt="image: windows">
+                    </label>
+                  </div><!-- /.calculator-label__block  calculator-label__block__second-->
+
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-3.png" alt="image: windows">
+                    </label>
+                  </div><!-- /.calculator-label__block  calculator-label__block__second-->
+
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-4.png" alt="image: windows">
+                    </label>
+                  </div>
+                  <!-- /.calculator-label__block calculator-label__block__second-->
+              </div>
+            <!-- /.calculator-stage__list --> 
+            </div>
+            <!-- /.calculator-stage__wrapper -->
+
+            <div class="calculator__bottom">
+              <span class="calculator__steps">Шаг 2/4</span>
+              <div class="calculator-buttons">
+                <a href="#" class="calculator__button calculator__button--secondary prev">Назад</a>
+                <a href="#" class="calculator__button next">Далее</a>
+              </div>
+              <!-- /.calculator-buttons -->          
+            </div>
+            <!-- /.calculator__bottom -->
+          </div>
+          <!-- /.calculator__menu -->
+
+          <div class="calculator-wrapper calculator-wrapper__second">
+            <span class="calculator__text">Выберите тип конструкции</span>
+            <div class="calculator__menu calculator-stage__second">
+              <div class="calcilator-stage__wrapper" data-index="2">
+                <div class="calculator-stage__list" >
+                                          
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio" checked>
+                      <b></b>
+                      <img src="/img/calculator-stage-image-1.png" class="stage-second__image" alt="image: windows">                  
+                    </label>
+                  </div>
+                  <!-- /.calculator-label__block  calculator-label__block__second-->    
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-2.png" class="stage-second__image" alt="image: windows">
+                    </label>
+                  </div><!-- /.calculator-label__block  calculator-label__block__second-->
+
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-3.png" alt="image: windows">
+                    </label>
+                  </div><!-- /.calculator-label__block  calculator-label__block__second-->
+
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-4.png" alt="image: windows">
+                    </label>
+                  </div>
+                  <!-- /.calculator-label__block calculator-label__block__second-->
+              </div>
+              <!-- /.calculator-stage__list -->
+            </div>
+            <!-- /.calcilator-stage__wrapper -->
+
+            <div class="calculator__bottom">
+              <span class="calculator__steps">Шаг 2/4</span>
+              <div class="calculator-buttons">
+                <a href="#" class="calculator__button calculator__button--secondary prev">Назад</a>
+                <a href="#" class="calculator__button next">Далее</a>
+              </div>
+              <!-- /.calculator-buttons -->          
+            </div>
+            <!-- /.calculator__bottom -->
+          </div>
+          <!-- /.calculator__menu -->
+          </div>
+          <!-- /.calculator-wrapper-->
+          <div class="calculator-wrapper calculator-wrapper__second" >
+            <span class="calculator__text">Выберите тип конструкции</span>
+            <div class="calculator__menu calculator-stage__second">
+              <div class="calculator-stage__wrapper" data-index="3">
+                <div class="calculator-stage__list">
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio" checked>
+                      <b></b>
+                      <img src="/img/calculator-stage-image-1.png" class="stage-second__image" alt="image: windows">
+                    </label>
+                  </div>
+                  <!-- /.calculator-label__block  calculator-label__block__second-->
+                  
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-2.png" class="stage-second__image" alt="image: windows">
+                    </label>
+                  </div><!-- /.calculator-label__block  calculator-label__block__second-->
+                  
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-3.png" alt="image: windows">
+                    </label>
+                  </div><!-- /.calculator-label__block  calculator-label__block__second-->
+                  
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-4.png" alt="image: windows">
+                    </label>
+                  </div>
+                  <!-- /.calculator-label__block calculator-label__block__second-->
+                </div>
+                <!-- /.calculator-stage__list -->
+              </div>
+              <!-- /.calculator-stage__wrapper -->
+              
+
+            <div class="calculator__bottom">
+              <span class="calculator__steps">Шаг 2/4</span>
+              <div class="calculator-buttons">
+                <a href="#" class="calculator__button calculator__button--secondary prev">Назад</a>
+                <a href="#" class="calculator__button next">Далее</a>
+              </div>
+              <!-- /.calculator-buttons -->          
+            </div>
+            <!-- /.calculator__bottom -->
+          </div>
+          <!-- /.calculator__menu -->
+          </div>
+          <!-- /.calculator-wrapper-->
+          <div class="calculator-wrapper calculator-wrapper__second" >
+            <span class="calculator__text">Выберите тип конструкции</span>
+            <div class="calculator__menu calculator-stage__second">
+              <div class="calculator-stage__wrapper" data-index="4">
+                <div class="calculator-stage__list">
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio" checked>
+                      <b></b>
+                      <img src="/img/calculator-stage-image-1.png" class="stage-second__image" alt="image: windows">
+                    </label>
+                  </div>
+                  <!-- /.calculator-label__block  calculator-label__block__second-->
+                  
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-2.png" class="stage-second__image" alt="image: windows">
+                    </label>
+                  </div><!-- /.calculator-label__block  calculator-label__block__second-->
+                  
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-3.png" alt="image: windows">
+                    </label>
+                  </div><!-- /.calculator-label__block  calculator-label__block__second-->
+                  
+                  <div class="calculator-label__block calculator-label__block__second">
+                    <label class="radio radio--second">
+                      <input type="radio" name="radio">
+                      <b></b>
+                      <img src="/img/calculator-stage-image-4.png" alt="image: windows">
+                    </label>
+                  </div>
+                  <!-- /.calculator-label__block calculator-label__block__second-->
+                </div>
+                <!-- /.calculator-stage__list -->
+              </div>
+              <!-- /.calculator-stage__wrapper -->
+              
+
+            <div class="calculator__bottom">
+              <span class="calculator__steps">Шаг 2/4</span>
+              <div class="calculator-buttons">
+                <a href="#" class="calculator__button calculator__button--secondary prev">Назад</a>
+                <a href="#" class="calculator__button next">Далее</a>
+              </div>
+              <!-- /.calculator-buttons -->          
+            </div>
+            <!-- /.calculator__bottom -->
+          </div>
+          <!-- /.calculator__menu -->
+          </div>
+          <!-- /.calculator-wrapper-->
+          </div>
+          <!-- /.calculator-wrapper .calculator-wrapper__second-->
+          <div class="calculator-wrapper calculator-wrapper__third">
+            <span class="calculator__text">Заполните поля</span>  
+            <div class="calculator__menu">
+                <div class="calculator-form">          
+                  <input type="text" placeholder="Высота, мм" name="height">
+                  <input type="text" placeholder="Ширина, мм" name="width">
+                </div>
+            <div class="calculator__bottom">
+              <span class="calculator__steps">Шаг 3/4</span>
+              <div class="calculator-buttons">
+                <a href="#" class="calculator__button calculator__button--secondary prev">Назад</a>
+                <a href="#" class="calculator__button next">Далее</a>
+              </div>
+              <!-- /.calculator-buttons -->
+              </div>
+              <!-- /.calculator__bottom -->
+            </div>
+            <!-- /.calculator__menu -->
+          </div>
+          <!-- /.calculator-wrapper-->
+          <div class="calculator-wrapper calculator-wrapper__fourth">
+            <span class="calculator__text">Заполните поля</span>
+            <div class="calculator__menu">
+              <div class="calculator-form">
+                <input type="text" placeholder="Ваше имя*" name="name" required>
+                <input type="text" placeholder="Ваш телефон*" name="phone" required>
+              </div>
+
+            <div class="calculator__bottom">
+              <div class="calculator-buttons">
+                <button class="calculator__button calculator__button__send">Отправить</button>
+              </div>
+              <!-- /.calculator-buttons -->
+              </div>
+              <!-- /.calculator__bottom -->
+            </div>
+            <!-- /.calculator__menu -->
+          </div>
+          <!-- /.calculator-wrapper-->
+
+
+
+
+        </form>
+        <!-- /.calculator-list -->
+
+      </div>
+      <!-- /.calculator__wrapper -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.calculator -->
+
+  <section class="about">
+    <div class="container">
+      <div class="about-wrapper">
+        <h2 class="about-title">О компании</h2>
+        <span class="about-title__line title__line"></span>
+        <div class="about-content">
+          <div class="about-image"><img src="/img/about-image.jpg" alt="">
+          </div>
+          <!-- /.about-image -->
+          <div class="about-info">
+            <p class="about-info__text">Компания ЕвроОкна основана в 1997 году и занимается производством изделий из алюминия и
+              ПВХ любой сложности на
+              собственном автоматизированном оборудовании. Кроме того компания производит рулонные шторы, жалюзи, рольставни,
+              подоконники, а также цельностеклянные конструкции. Компания ЕвроОкна сотрудничает с компаниями Rehau, Proplex,
+              Alutech,
+              Siegenia, MACO, Stublina, Savio. Сотрудники работающие в компании прошли обучение у специалистов фирмы Murat
+              (Турция).</p>
+            <div class="about-items">
+              <div class="about-item">
+                <img src="/img/about-icon-taxes.svg" alt="icon: taxes">
+                <span class="about-item__text">Рассрочка 0%</span>
+              </div>
+              <!-- /.about-info__item -->
+              <div class="about-item">
+                <img src="/img/about-icon-guarantee.svg" alt="icon: guarantee">
+                <span class="about-item__text">10 лет гарантии</span>
+              </div>
+              <!-- /.about-item -->
+              <div class="about-item">
+                <img src="/img/about-icon-appointment.svg" alt="icon: appointment">
+                <span class="about-item__text">Установка и доставка <br> от одного дня</span>
+              </div>
+              <!-- /.about-item -->
+              <div class="about-item">
+                <img src="/img/about-icon-location.svg" alt="icon: location">
+                <span class="about-item__text">Доставка по <br> Республике Дагестан</span>
+              </div>
+              <!-- /.about-item -->
+            </div>
+            <!-- /.about-items -->
+          </div>
+          <!-- /.about-info -->
+        
+        </div>
+        <!-- /.about-content -->
+      </div>
+      <!-- /.about-wrapper -->
+    </div>
+    <!-- /.container -->
+
+  </section>
+
+
+  <section class="promotion">
+    <div class="container">
+      <div class="promotion-wrapper">
+        <h2 class="promotion-title">Акции</h2>
+        <span class="promotion-title__line title__line"></span>
+        <div class="promotion-content">
+          <div class="promotion-content__block">
+            <div class="promotion-item">
+              <div class="promotion-item__image"><img src="/img/promotion-image-installment.jpg" alt="image: windows">
+              </div>
+              <!-- /.promotion-item__image -->
+              <div class="promotion-item__info">
+                <h3 class="promotion-item__subtitle">Рассрочка 0%</h3>
+                <p class="promotion-item__text">Получите окна сейчас, а платите потом. У нас самое выгодное предложение: рассрочка +
+                  скидка 25%</p>
+                <a href="#form" data-fancybox data-touch="false" class="promotion-item__button">Получить бонус</a>
+              </div>
+              <!-- /.promotion-item__info -->
+            </div>
+            <!-- /.promotion-item -->
+          </div>
+          <!-- /.promotion-content__block -->
+            
+          <div class="promotion-content__block">
+            <div class="promotion-item">
+              <div class="promotion-item__image"><img src="/img/promotion-image-discount.jpg" alt="image: windows">
+              </div>
+              <!-- /.promotion-item__image -->
+              <div class="promotion-item__info">
+                <h3 class="promotion-item__subtitle">Скидки новосёлам</h3>
+                <p class="promotion-item__text">Приобрели жилье и нужны новые окна? Получите от нас скидку до 35%. Оставьте заявку и
+                  забронируйте скидку уже сейчас</p>
+                <a href="#form" data-fancybox data-touch="false" class="promotion-item__button">Получить бонус</a>
+              </div>
+              <!-- /.promotion-item__info -->
+            </div>
+            <!-- /.promotion-item -->
+          </div>
+          <!-- /.promotion-content__block -->
+
+          <div class="promotion-content__block">
+            <div class="promotion-item">
+              <div class="promotion-item__image"><img src="/img/promotion-image-discount25.jpg" alt="image: windows">
+              </div>
+              <!-- /.promotion-item__image -->
+              <div class="promotion-item__info">
+                <h3 class="promotion-item__subtitle">Скидка 25%</h3>
+                <p class="promotion-item__text">Выгодное предложение при заказе через сайт. Запишитесь на замер и скидка 25% будет забронирована на ваш номер</p>
+                <a href="#form" data-fancybox data-touch="false" class="promotion-item__button">Получить бонус</a>
+              </div>
+              <!-- /.promotion-item__info -->
+            </div>
+            <!-- /.promotion-item -->
+          </div>
+          <!-- /.promotion-content__block -->
+        </div>
+        <!-- /.promotion-content -->
+      </div>
+      <!-- /.promotion-wrapper -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <section class="news">
+    <div class="container">
+      <div class="news-wrapper">
+        <h2 class="news-title">Последие новости</h2>
+        <span class="news-title__line title__line"></span>
+        <div class="news-content">
+          <article class="news-item">
+            <div class="news-image">
+              <img src="/img/news-image.jpg" alt="">
+              <span class="news-image__label">11.02.2021</span>
+            </div>
+            <!-- /.news-image -->
+            <div class="news-info">
+              <h3 class="news-subtitle">Секреты выбора пластиковых окон</h3>
+              <p class="news-description">Какое окно можно назвать качественным? Лишь то, которое изготавливалось под строгим контролем и с использованием только лучших комплектующих!</p>
+              <a href="#" class="news-link">Читать далее</a>
+            </div>
+            <!-- /.news-info -->            
+          </article>          
+          <!-- /.news-item -->
+
+          <article class="news-item">
+            <div class="news-image">
+              <img src="/img/news-image.jpg" alt="">
+              <span class="news-image__label">11.02.2021</span>
+            </div>
+            <!-- /.news-image -->
+            <div class="news-info">
+              <h3 class="news-subtitle">Секреты выбора пластиковых окон</h3>
+              <p class="news-description">Какое окно можно назвать качественным? Лишь то, которое изготавливалось под строгим контролем и с использованием только лучших комплектующих!</p>
+              <a href="#" class="news-link">Читать далее</a>
+            </div>
+            <!-- /.news-info -->
+          </article>
+          <!-- /.news-item -->
+
+          <article class="news-item">
+            <div class="news-image">
+              <img src="/img/news-image.jpg" alt="">
+              <span class="news-image__label">11.02.2021</span>
+            </div>
+            <!-- /.news-image -->
+            <div class="news-info">
+              <h3 class="news-subtitle">Секреты выбора пластиковых окон</h3>
+              <p class="news-description">Какое окно можно назвать качественным? Лишь то, которое изготавливалось под строгим контролем и с использованием только лучших комплектующих!</p>
+              <a href="#" class="news-link">Читать далее</a>
+            </div>
+            <!-- /.news-info -->
+          </article>
+          <!-- /.news-item -->
+        </div>
+        <!-- /.news-content -->
+
+        <a href="#" class="news-button">Перейти к новостям</a>
+      </div>
+      <!-- /.news-wrapper -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <section class="contacts">
+    <div class="container">
+      <div class="contacts-wrapper">
+          <div class="contacts-info">
+            <h2 class="contacts-title">Контакты</h2>
+            <span class="contacts-title__line title__line"></span>
+            <div class="contacts-block">
+              <div class="contacts-item contacts-item__phone">
+                <img src="/img/contacts-phone.svg" alt="icon: phone">
+                <a href="tel:79882917390"><span class="contacts-item__text"><span
+                      class="contacts-item__text--bold">Телефон:</span> +7 (988) 291-73-90</span></a>
+              </div>
+              <!-- /.contacts-item contacts-phone -->
+              <div class="contacts-item contacts-item__whatsapp">
+                <img src="/img/contacts-whatsapp.svg" alt="icon: whatsapp">
+                <span class="contacts-item__text"><span class="contacts-item__text--bold">Whatsapp:</span> +7 (988)
+                  291-73-90</span>
+              </div>
+              <!-- /.contacts-item contacts-phone -->
+              <div class="contacts-item contacts-item__adress">
+                <img src="/img/contacts-marker.svg" alt="icon: marker">
+                <span class="contacts-item__text"><span class="contacts-item__text--bold">Адрес:</span> г.Махачкала,
+                  ул.Ирчи-Казака 1Д</span>
+              </div>
+              <!-- /.contacts-item contacts-phone -->
+              <div class="contacts-item contacts-item__instagram">
+                <img src="/img/contacts-instagram.svg" alt="icon: instagram">          
+                <a href="#form" data-fancybox data-touch="false" class="contacts-item__text"><span
+                    class="contacts-item__text--bold">Instagram:</span> @nameinstagram</a>          
+              </div>
+              <!-- /.contacts-item contacts-phone -->
+            </div>
+            <!-- /.contacts-block -->
+            <a href="#form" data-fancybox data-touch="false" class="contacts-item__button">Заказать звонок</a>
+          </div>
+          <!-- /.contacts-info -->
+          <div class="contacts-map">
+            <script type="text/javascript" charset="utf-8" async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2fa6f856f18a1ae43273d4049094c1b25d18ae8c064e40f7d6325b62878666ab&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
+          </div>
+          <!-- /.contacts-map -->
+        </div>
+        <!-- /.contacts-wrapper -->
+      </div>
+      <!-- /.container -->
+
+  </section>
+
+        
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-logo">
+          <img src="/img/footer-logo.png" alt="logo">
+        </div>
+        <!-- /.footer-logo -->
+        <div class="footer-list">
+          <ul class="footer-nav">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <!-- /.foooter-list -->
+        <div class="footer-info">
+          <span class="footer-info__text">© 1997-2021 ЕвроОкна. Все права защищены.</span>
+          <a href="#">Политика обработки персональных данных.</a>
+        </div>
+        <!-- /.footer-info -->
+      </div>
+      <!-- /.footer-wrapper -->
+    </div>
+    <!-- /.container -->
+  </footer>
+
+
+
+
+  <div class="form--hidden">
+    <div id="form" class="form-wrapper">
+      <h2 class="form__title">Оставьте свои контактные данные <br> и мы свяжемся с Вами</h2>
+      <form action="#" class="form">
+        <input type="text" class="form__input form__input--name" placeholder="Ваше имя*" name="name" required>
+        <input type="tel" class="form__input form__input--phone" placeholder="Ваш телефон*" name="phone" required>
+          <label class="modal-checkbox">
+            <input type="checkbox" checked required>
+            <b></b>
+            <span class="form__accept">Я согласен(сна) на обработку персональных данных в соответствии с компании.</span>
+          </label>
+        <button class="form__button">Заказать звонок</button>
+      </form>
+    </div>
+    <!-- /.main-request -->
+  </div>
+  <!-- /.form--hidden -->
+
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/jquery.fancybox.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

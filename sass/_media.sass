@@ -1,0 +1,649 @@
+@media (max-width : 1300px)
+  .main
+    &-content
+      justify-content: flex-start
+    &-info
+      margin-right:
+    &__title
+      font-size: 40px
+
+  .request
+    width: 380px
+
+@media (max-width : 1200px)
+  .container
+    width: 940px
+  body
+    padding-top: 104px
+  .header
+    &__mobile
+      &--fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &-nav
+      display: none
+      position: fixed
+      left: 0
+      bottom: 0
+      right: 0
+
+      &__button
+        display: flex
+        width: 35px
+        height: 20px
+        padding: 0
+        align-items: center
+        justify-content: space-between
+        flex-direction: column
+        border: none
+        background-color: #fff
+        cursor: pointer
+        &__line
+          width: 35px
+          height: 2px
+          background-color: #0F2655
+    &-contacts
+      &__tel
+        font-size: 16px
+      &__item:last-child
+        display: none
+      &__icon
+        margin-right: 10px
+
+    &__button
+      width: 158px
+      min-width: 158px
+    &-mobile
+
+  .main
+    &-info
+      margin-right: 120px
+    &__title
+      font-size: 33px
+
+  .calculator
+    &__container
+      width: 85%
+    &__description
+      font-size: 22px
+
+  .about
+    &-content
+    &-title
+      &__line
+    &-image
+      height: 425px
+      img
+        object-fit: cover
+    &-info
+      &__text
+        font-size: 15px
+    &-item
+      font-size: 17px
+
+  .promotion
+    &-content
+      &__block
+        width: 33.3333%
+        margin-top: 25px
+        padding: 0 15px
+    &-item
+      &__image
+        margin-bottom: 10px
+      &__info
+        padding: 20px
+      &__subtitle
+        margin: 0 0 15px 0
+      &__text
+        line-height: 22px
+
+  .news
+    &-item
+      width: 32%
+
+@media (max-width : 1070px)
+  .main
+    padding: 50px 0 97px 0
+    &-content
+      flex-direction: column
+      align-items: center
+    &__title
+      align-self: center
+      text-align: center
+      font-size: 40px
+      line-height: normal
+    &-info
+      margin-right: 0
+      &__buttons
+        align-self: center
+        margin-bottom: 70px
+    &-button
+      width: 210px
+      min-height: 50px
+      padding: 10px
+
+@media (max-width : 1024px)
+  .main
+    padding: 40px 0 80px 0
+    &__title
+      margin: 0 0 50px 0
+    &-info
+      &__buttons
+        margin: 0 0 50px 0
+  .request
+    width: 500px
+  .about
+    padding: 115px 0 75px 0
+  .promotion
+    padding: 50px 0 60px 0
+  .news
+    padding: 50px 0 60px 0
+
+@media (max-width : 992px)
+  .container
+    width: 730px
+
+  .header
+    &__logo
+      margin-right: 0
+    &-contacts
+      display: none
+    &__button
+      display: none
+
+    &-mobile
+      &__logo
+        margin-bottom: 30px
+      &__nav
+        flex-direction: column
+        align-items: center
+        margin-bottom: 30px
+        li
+          margin-bottom: 25px
+      &__contacts
+        flex-direction: column
+        justify-content: center
+  .calculator
+    &__menu
+      max-width: 100%
+      justify-content: space-evenly
+    &-label
+      &__block
+        width: calc(45% - 15px)
+        // height: 141px
+        margin: 25px 0 0 0
+    &__bottom
+      flex-direction: column
+      // flex-wrap: wrap
+    &__steps
+      flex-basis: 100%
+      margin: 0 0 15px 0
+    &-buttons
+      align-self: center
+
+    &-form
+      input
+        margin-top: 15px
+
+  .about
+    padding: 95px 0 70px 0
+    &-title
+      &__line
+        margin-bottom: 55px
+    &-content
+      flex-direction: column
+      align-items: center
+    &-image
+      width: 100%
+      height: 400px
+      margin-bottom: 30px
+      img
+        object-position: top
+    &-info
+      padding: 0 15px
+      &__text
+        margin: 0 0 35px 0
+    &-item
+      &__text
+        br
+          display: none
+  .promotion
+    padding: 50px 0 50px 0
+    &-title
+      &__line
+        margin-bottom: 30px
+    &-content
+      &__block
+        width: 50%
+    &-item
+      &__info
+        padding: 15px 12px
+      &__text
+        line-height: 22px
+        font-size: 14px
+  .news
+    &-title
+      &__line
+        margin-bottom: 30px
+    &-content
+      flex-wrap: wrap
+    &-item
+      margin-top: 30px
+      width: 48%
+      &:nth-child(3)
+        display: none
+
+  .contacts
+    padding: 40px 0 0 0
+    &-wrapper
+      flex-direction: column
+    &-info
+      padding: 0
+      margin-bottom: 400px
+    &-item
+      &__button
+        align-self: center
+        margin-bottom: 35px
+    &-map
+      top: auto
+      bottom: 0
+      width: 100%
+      height: 400px
+  .footer
+    &-info
+      flex-direction: column
+      margin-top: 40px
+      &__text
+        order: 1
+        margin-top: 25px
+
+@media (max-width : 768px)
+  .container
+    width: 540px
+  body
+    padding-top: 79px
+  .header
+    &__logo
+      img
+        width: 110px
+    &__button
+      display: none
+    &-mobile
+      &__contacts
+        &__item:nth-child(1)
+          margin-right: 0
+
+  .main
+    padding: 40px 0 97px 0
+    &__title
+      font-size: 35px
+      margin: 0 0 40px 0
+
+  .calculator
+    &__description
+      line-height: normal
+    // &__text
+    //   margin-bottom: 0
+  .about
+    padding: 75px 0 30px 0
+    &-title
+      line-height: normal
+      &__line
+        margin-bottom: 35px
+    &-info
+      &__text
+        line-height: 23px
+
+  .promotion
+    padding: 40px 0 40px 0
+    &-title
+      line-height: normal
+    &-content
+      flex-direction: column
+      align-items: center
+      &__block
+        width: 70%
+        max-width: 400px
+        margin-top: 0
+        &:not(:last-child)
+          margin-bottom: 30px
+
+    &-item
+      &__info
+        padding: 25px
+      &__text
+        line-height: normal
+
+  .news
+    padding: 40px 0 40px 0
+    &-title
+      font-size: 30px
+      line-height: normal
+      &__line
+        margin-bottom: 5px
+    &-content
+      flex-direction: column
+      align-items: center
+      margin-bottom: 25px
+    &-item
+      margin-top: 30px
+      width: 70%
+      max-width: 400px
+    &-subtitle
+      margin: 0 0 10px 0
+
+  .contacts
+    &-title
+      font-size: 30px
+      line-height: normal
+      &__line
+        margin-bottom: 35px
+    &-item
+      &__button
+        min-width: 228px
+        min-height: 50px
+        margin-bottom: 30px
+  .calculator
+    &-form
+      flex-direction: column
+      input
+        &:first-child
+          margin: 15px 0 0 0
+  .calculator
+    &-wrapper
+      &__third
+
+@media (max-width : 576px)
+  .container
+    width: 92%
+    // width: 100%
+    // padding: 0 15px
+
+  .header
+    &-mobile
+      padding-top: 20px
+      &__contacts
+        &__item
+          font-size: 15px
+
+  .main
+    &__title
+      font-size: 32px
+    &-info
+      &__buttons
+        flex-direction: column
+    &-button:first-child
+      margin: 0 0 20px 0
+
+  .request
+    width: 400px
+
+  .calculator
+    &__container
+      width: 360px
+      max-width: 100%
+    &__wrapper
+      padding: 5px 0 20px 0
+    &__description
+      padding: 10px
+      font-size: 20px
+      &--bold
+        margin: 10px 0 10px 0
+    &__menu
+      justify-content: center
+    &-label
+      &__block
+        width: 80%
+        margin: 12px 0 0 0
+    &-buttons
+      width: 60%
+      flex-direction: column
+      align-items: center
+    &__button
+      width: 100%
+      &:first-child
+        margin: 0 0 10px 0
+
+  .about
+    &-image
+      min-height: auto
+      height: 250px
+      width: 350px
+      min-width: 350px
+      max-width: 100%
+      img
+        object-position: center
+    &-content
+      max-width: 90%
+    &-items
+      width: 100%
+      flex-direction: column
+      align-items: flex-start
+    &-item
+      width: 100%
+      &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+        margin-bottom: 20px
+
+    &__br
+      display: none
+  .contacts
+    &-info
+      margin-bottom: 300px
+    &-map
+      height: 300px
+  .footer
+    padding: 10px 0 22px 0
+    &-logo
+      img
+        width: 120px
+    &-list
+      width: 80%
+    &-nav
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      flex-wrap: wrap
+      margin: 0 0 10px 0
+      li
+        flex-basis: 30%
+        margin-top: 15px
+      a
+        font-size: 14px
+    &-info
+      margin-top: 20px
+      &__text
+        margin-top: 15px
+
+@media (max-width : 425px)
+
+  .header
+    &-mobile
+      &__contacts
+        align-items: flex-start
+
+  .main
+    padding: 25px 0 77px 0
+    &__title
+      font-size: 24px
+    &-info
+      &__buttons
+        margin-bottom: 40px
+
+  .request
+    width: 310px
+    max-width: 100%
+
+  .calculator
+    &__wrapper
+      max-width: 100%
+      width: 400px
+      padding: 0 0 20px 0
+
+  .about
+    padding: 65px 0 10px 0
+    &-title
+      font-size: 26px
+    &-info
+      padding: 0 10px
+      &__text
+        text-align: center
+    &-item
+      &__text
+        font-size: 16px
+
+  .promotion
+    padding: 25px 0 25px 0
+    &-title
+      font-size: 26px
+    &-content
+      &__block:not(:last-child)
+        margin-bottom: 15px
+      &__block
+        width: 100%
+    &-item
+      &__image
+        padding-top: 10px
+        &::after
+          bottom: -3%
+      &__info
+        padding: 10px
+      &__text
+        margin: 0 0 15px 0
+
+  .news
+    padding: 25px 0 25px 0
+    &-title
+      font-size: 26px
+      &__line
+        margin-bottom: 35px
+    &-content
+      margin-bottom: 0
+    &-item
+      margin: 0 0 15px 0
+    &-info
+      padding: 10px 10px
+    &-description
+      font-size: 15px
+      margin: 0 0 20px 0
+
+  .contacts
+    padding: 20px 0 0 0
+    &-title
+      font-size: 26px
+    &-item
+      margin-bottom: 20px
+      &__text
+        font-size: 16px
+
+@media (max-width : 375px)
+
+  body
+    padding-top: 55px
+
+  .header
+    padding: 5px 0
+    &__logo
+      img
+        width: 100px
+    &-mobile
+      &__contacts
+        &__item
+          font-size: 13px
+
+  .calculator
+    &-description
+      font-size: 18px
+    &__text
+      font-size: 16px
+
+  .main
+    &__title
+      font-size: 22px
+  .request
+    // width: 310px
+    &-form
+      padding: 20px 10px
+
+  .calculator
+    &__container
+      width: 300px
+    &-label
+      &__block
+        width: 75
+
+  .about
+    &-items
+      align-items: flex-start
+    &-image
+      height: 220px
+      width: 300px
+      min-width: 300px
+      max-width: 100%
+      margin-bottom: 20px
+
+  .promotion
+    &-content
+      &__block
+        width: 85%
+        max-width: 320px
+
+  .news
+    &-content
+      margin-bottom: 20px
+    &-item
+      width: 85%
+      max-width: 320px
+
+  .contacts
+    &-item
+      img
+        margin-right: 6px
+      &__text
+        font-size: 14px
+        &--bold
+          font-size: 15px
+
+  .footer
+    &-info
+      &__text
+        font-size: 13px
+  .form
+    &__accept
+      font-size: 11px
+
+@media (max-width : 320px)
+  .main
+    &__title
+      font-size: 20px
+      margin: 0 0 25px 0
+    &-button:first-child
+      margin: 0 0 15px 0
+  .calculator
+    &__description
+      &--bold
+        font-size: 17px
+
+  .promotion
+    &-content
+      &__block
+        width: 95%
+    &-item
+      &__subtitle
+        font-size: 20px
+        margin: 0 0 10px 0
+  .news
+    &-item
+      width: 95%
+
+  .form
+    &-wrapper
+      padding: 20px 30px
+    &__title
+      text-align: left
+      br
+        display: none
+    &__accept
+      font-size: 10px

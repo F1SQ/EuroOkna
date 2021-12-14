@@ -1,0 +1,103 @@
+.news
+  padding: 80px 0 80px 0
+  color: #212121
+  &-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: center
+    color: #212121
+  &-title
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 36px
+    line-height: 42px
+    margin: 0 0 10px 0
+    &__line
+      margin-bottom: 55px
+
+  &-content
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom: 50px
+
+  &-item
+    width: 370px
+    border-radius: 8px
+    overflow: hidden
+    border-left: 1px solid rgba(0, 0, 0, 0.1)
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+    border-right: 1px solid rgba(0, 0, 0, 0.1)
+  &-image
+    position: relative
+    overflow: hidden
+    img
+      width: 100%
+      height: auto
+    &__label
+      display: flex
+      justify-content: center
+      align-items: center
+      text-align: center
+      min-width: 89px
+      height: 30px
+      position: absolute
+      left: 15px
+      bottom: 15px
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 12px
+      line-height: 14px
+      color: #FFFFFF
+      background: #0F2655
+      border-radius: 6px
+      overflow: hidden
+
+  &-info
+    padding: 20px 30px
+
+  &-subtitle
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 21px
+    margin: 0 0 20px 0
+
+  &-description
+    margin: 0 0 30px 0
+  &-link
+    color: #00a0e3
+    text-decoration: none
+    transition: all 0.2s
+    &:hover
+      text-decoration: underline
+      color: darken(#00a0e3 , 10%)
+
+  &-button
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 230px
+    height: 50px
+    margin: 0 auto
+    padding: 17px
+    color: #00A0E3
+    background: #fff
+    border: 1px solid #00A0E3
+    box-sizing: border-box
+    border-radius: 5px
+    text-decoration: none
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 16px
+    text-transform: uppercase
+    transition: all 200ms linear
+    &:hover
+      color: #fff
+      background: #00A0E3
+      text-decoration: none

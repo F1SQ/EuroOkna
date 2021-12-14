@@ -1,0 +1,333 @@
+// .catalog
+//   padding: 50px 0 80px 0
+//   &-wrapper
+//     display: flex
+//     flex-direction: column
+//     align-items: flex-start
+//     justify-content: center
+//     font-family: Roboto
+//     font-style: normal
+//     font-weight: normal
+//     color: #212121
+//   &-title
+//     font-weight: 500
+//     font-size: 36px
+//     line-height: 42px
+//     margin: 0 0 50px 0
+
+//   &-content
+//     width: 100%
+//     display: flex
+//     align-items: flex-start
+//   &-menu
+//     margin-right: 50px
+//   &-products
+//     max-width: 100%
+//     width: 320px
+//     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15)
+//     border-radius: 8px
+//     margin-bottom: 30px
+//   &-product
+    // &__list
+    //   // padding: 15px 0 0 0
+    //   display: flex
+    //   flex-direction: column
+    //   margin: 0
+    //   list-style: none
+    //   padding: 15px 30px
+    //   border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+
+    //   li
+
+    //     padding: 0
+    //     &::first-child
+    //       margin-bottom: 15px
+    //     a
+
+    //       display: flex
+    //       justify-content: space-between
+    //       text-decoration: none
+    //       color: #212121
+    //       font-weight: normal
+    //       font-size: 16px
+    //       line-height: 19px
+
+    //       img
+    //         transition: all 0.2s
+    //         filter: brightness(0)
+
+    //     ul
+    //       display: none
+    //       list-style: none
+    //       padding: 0
+    //       margin-top: 15px
+    //       transition: none !important
+    //       li
+    //         a
+    //           font-weight: normal
+    //           font-size: 14px
+    //           line-height: 16px
+    //           color: rgba(33, 33, 33, 0.5)
+    //           transition: all 0.2s
+    //         &:not(:first-child)
+    //           margin-top: 10px
+
+  //   &__link
+  //   &__item
+  //     &:not(:first-child)
+  //       margin: 10px 0 0 0
+  //   &__link
+  //     color: rgba(33, 33, 33, 0.5)
+  //     transition: all 0.2s
+  //     text-decoration: none
+  //     cursor: pointer
+  //     font-style: normal
+  //     font-weight: normal
+  //     font-size: 14px
+  //     line-height: 16px
+  //     &:hover
+  //       color: darken(#00A0E3, 10%)
+  // &-buttons
+  //   max-width: 318px
+  //   border: 1px solid rgba(0, 0, 0, 0.05)
+  //   box-sizing: border-box
+  //   border-radius: 8px
+  //   overflow: hidden
+  //   &__button
+  //     display: flex
+  //     justify-content: flex-start
+  //     align-items: center
+  //     max-width: 100%
+  //     width: 100%
+  //     min-height: 66px
+  //     padding: 15px 15px 15px 50px
+  //     font-style: normal
+  //     font-weight: bold
+  //     font-size: 12px
+  //     line-height: 22px
+  //     text-transform: uppercase
+  //     text-decoration: none
+  //     transition: all 0.3s
+  //     cursor: pointer
+  //     color: #00A0E3
+  //     &:nth-child(1)
+  //       border-radius: 8px 8px 0 0
+  //       border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  //     &:nth-child(2)
+  //       border-radius: 0 0 8px 8px
+  //     img
+  //       margin-right: 16px
+  //     &:hover
+  //       background: #00A0E3
+  //       color: #fff
+  //       img
+  //         -webkit-filter: brightness(0) invert(1)
+  //         filter: brightness(0) invert(1)
+.catalog
+  &-list
+    width: calc(100% + 30px)
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    flex-wrap: wrap
+    // width: auto
+    margin: -30px -15px 0 -15px
+    overflow: hidden
+    flex-grow: 1
+  &-block
+    display: none
+    max-width: 100%
+    width: 33.3333%
+    margin-top: 30px
+    padding: 0 15px
+    &:nth-child(1)
+      display: block
+    &:nth-child(2)
+      display: block
+    &:nth-child(3)
+      display: block
+    &:nth-child(4)
+      display: block
+    &:nth-child(5)
+      display: block
+    &:nth-child(6)
+      display: block
+    &:nth-child(7)
+      display: block
+    &:nth-child(8)
+      display: block
+    &:nth-child(9)
+      display: block
+
+  &-item
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    position: relative
+    width: 100%
+    min-height: 100%
+    padding: 15px 15px 20px 15px
+    border: 1px solid rgba(0, 0, 0, 0.15)
+    box-sizing: border-box
+    border-radius: 8px
+
+    &__label
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      left: 0
+      top: 0
+      min-width: 87px
+      min-height: 30px
+      padding: 4px
+      background-color: #2BA037
+      font-size: 14px
+      line-height: 16px
+      text-align: center
+      color: #FFFFFF
+      border-radius: 8px 0 8px 0
+      z-index: 10
+
+    &__image
+      margin-bottom: 15px
+      cursor: pointer
+      z-index: 5
+    &__text
+      font-size: 18px
+      line-height: 21px
+      text-align: center
+      margin-bottom: 15px
+      color: #00A0E3
+      text-decoration: none
+      transition: all 0.2s
+      cursor: pointer
+      &:hover
+        color: darken(#00A0E3, 10%)
+    &__button
+      display: flex
+      justify-content: center
+      align-items: center
+      max-width: 150px
+      min-width: 150px
+      min-height: 40px
+      padding: 12px
+      background-color: #00A0E3
+      font-family: Ubuntu
+      font-style: normal
+      font-weight: bold
+      font-size: 14px
+      line-height: 16px
+      text-align: center
+      text-transform: uppercase
+      color: #FFFFFF
+      border-radius: 5px
+      text-decoration: none
+      cursor: pointer
+      transition: all 0.2s
+      &:hover
+        background-color: darken(#00A0E3, 10%)
+
+// .catalog
+//   &-product
+//     &__list.active
+//       li
+//         a
+//           color: #00A0E3
+//           img
+//             filter: brightness(1)
+//             transform: rotate(90deg)
+//         ul
+//           display: block
+//           li
+//             a
+//               color: rgba(33, 33, 33, 0.5)
+//               &:hover
+//                 color: darken(#00A0E3, 10%)
+
+@media (max-width : 1200px)
+  .catalog
+    &-block
+      width: 50%
+      &:nth-child(9)
+        display: none
+
+@media (max-width : 1024px)
+  .catalog
+    padding: 30px 0 50px 0
+    &-title
+      font-size: 34px
+      margin: 0 0 30px 0
+    &-menu
+      margin-right: 40px
+    &-list
+      margin: -20px -10px 0 -10px
+    &-block
+      margin-top: 20px
+      padding: 0 10px
+
+.contacts
+  &-title
+    font-size: 32px
+
+@media (max-width : 992px)
+  .catalog
+    &-title
+      margin: 0 0 20px 0
+
+    &-content
+      flex-direction: column-reverse
+    &-block
+      width: 33.3333%
+      &:nth-child(9)
+        display: block
+    &-wrapper
+      &__menu
+        width: 100%
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        margin: 30px 30px 0 0
+      &__buttons
+        min-width: 318px
+      &__button
+        padding: 15px 15px 15px 50px
+@media (max-width : 768px)
+  .catalog
+    &-title
+      font-size: 32px
+    &-block
+      width: 50%
+      &:nth-child(9)
+        display: none
+    &-wrapper
+      &__menu
+        flex-direction: column
+        justify-content: center
+        align-items: center
+@media (max-width : 768px)
+  .catalog
+    &-title
+      align-self: center
+      margin: 0
+      line-height: normal
+    &-wrapper
+      &__menu
+        margin: 30px 0 0 0
+    &-list
+      max-width: 100%
+      margin: 0 auto
+    &-block
+      width: 100%
+@media (max-width : 375px)
+  .catalog
+    &-title
+      font-size: 30px
+    &-products
+      width: 300px
+    &-wrapper
+      &__buttons
+        min-width: 300px
+    &-block
+      padding: 0

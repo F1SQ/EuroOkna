@@ -1,0 +1,232 @@
+.gallery
+  padding: 50px 0 80px 0
+  font-family: Roboto
+  font-style: normal
+  color: #212121
+  &-wrapper
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+  &-title
+    margin: 0 0 30px 0
+    font-weight: 500
+    font-size: 36px
+    line-height: 42px
+  &-content
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    width: 100%
+  &-links
+    max-width: 100%
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-start
+    flex-wrap: wrap
+    margin-bottom: 30px
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      padding: 12px 30px
+      font-weight: bold
+      font-size: 14px
+      line-height: 16px
+      text-align: center
+      text-decoration: none
+      color: #000000
+      background: #FFFFFF
+      border: 1px solid rgba(0, 0, 0, 0.15)
+      border-radius: 8px
+      transition: all 0.2s
+      &:hover
+        color: darken(#00A0E3, 10%)
+        border: 1px solid darken(#00A0E3, 10%)
+      &:not(:last-child)
+        margin-right: 20px
+
+  &-items
+    display: flex
+    flex-wrap: wrap
+    margin: -30px -15px 50px -15px
+    // width: auto
+
+  &-item
+    display: none
+    position: relative
+    width: 25%
+    height: auto
+    margin-top: 30px
+    padding: 0 15px
+    border-radius: 8px
+    overflow: hidden
+    a
+      display: block
+      width: 100%
+      height: 100%
+      cursor: pointer
+    &:nth-child(1)
+      display: block
+    &:nth-child(2)
+      display: block
+    &:nth-child(3)
+      display: block
+    &:nth-child(4)
+      display: block
+    &:nth-child(5)
+      display: block
+    &:nth-child(6)
+      display: block
+    &:nth-child(7)
+      display: block
+    &:nth-child(8)
+      display: block
+
+  &-block
+    display: block
+    width: 100%
+    height: 100%
+    // height: 270px
+    position: relative
+    border-radius: 8px
+    overflow: hidden
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      background-color: rgba(0, 0, 0, 0.5)
+      opacity: 0
+      transition: all 0.2s
+      z-index: 10
+    &:hover::before
+      opacity: 1
+    &::after
+      content: url(../img/gallery-loop-icon.svg)
+      display: block
+      position: absolute
+      top: 40%
+      left: 40%
+      opacity: 0
+      transition: all 0.2s
+      z-index: 20
+    &:hover::after
+      opacity: 1
+    img
+      width: 100%
+      height: 100%
+      z-index: 1
+
+  &-button
+    align-self: center
+    display: flex
+    justify-content: center
+    align-items: center
+    min-width: 200px
+    min-height: 60px
+    padding: 22px 25px
+    font-family: Ubuntu
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 16px
+    text-decoration: none
+    cursor: pointer
+    transition: all 0.2s
+    border-radius: 5px
+    text-transform: uppercase
+    background-color: #00A0E3
+    color: #fff
+    &:hover
+      background-color: darken(#00A0E3, 10%)
+
+.gallery-links a.active
+  color: #00A0E3
+  border: 1px solid #00A0E3
+
+@media (max-width : 1200px)
+  .gallery
+    &-items
+      margin: -20px -10px 50px -10px
+
+    &-item
+      margin-top: 20px
+      padding: 0 10px
+@media (max-width : 1024px)
+  .gallery
+    padding: 30px 0 50px 0
+    &-items
+      margin: -30px -10px 30px -10px
+    &-item
+      width: 33.3333%
+      &:nth-child(7)
+        display: none
+      &:nth-child(8)
+        display: none
+    &-button
+      min-height: 50px
+      padding: 12px 25px
+
+@media (max-width : 992px)
+  .gallery
+    &-items
+      margin: 10px -10px 30px -10px
+    &-links
+      margin: -12px 0 0 0
+      a
+        padding: 10px 25px
+        margin-top: 12px
+      a:not(:last-child)
+        margin-right: 12px
+
+@media (max-width : 768px)
+  .gallery
+    &-item
+      width: 50%
+      &:nth-child(5)
+        display: none
+      &:nth-child(6)
+        display: none
+
+@media (max-width : 576px)
+  .gallery
+    padding: 25px 0 40px 0
+    &-title
+      margin: 0 0 20px 0
+      line-height: normal
+    &-items
+      margin: 10px -10px 25px -10px
+    &-item
+      margin-top: 15px
+      padding: 0 7.5px
+@media (max-width : 425px)
+  .gallery
+    &-links
+      a
+        padding: 8px 17px
+        margin-top: 10px
+      a:not(:last-child)
+        margin-right: 10px
+
+    &-items
+      justify-content: center
+      margin: 5px -10px 25px -10px
+    &-item
+      max-width: 350px
+      width: 90%
+@media (max-width : 375px)
+  .gallery
+    &-links
+      a
+        font-size: 12px
+        line-height: normal
+      a:not(:last-child)
+        margin-right: 9px
+    &-item
+      width: 100%

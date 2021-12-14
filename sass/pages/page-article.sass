@@ -1,0 +1,187 @@
+.page
+  font-family: Roboto
+  font-style: normal
+  padding: 50px 0 80px 0
+  color: #212121
+  &-wrapper
+
+  &-top
+    display: flex
+    align-items: center
+    flex-direction: row
+    justify-content: space-between
+    margin: 0 0 50px 0
+
+  &-title
+    margin: 0
+    font-size: 36px
+    font-weight: 500
+    line-height: 42px
+
+    &__span
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 114px
+      height: 35px
+      background: #0F2655
+      border-radius: 8px
+      font-weight: 500
+      font-size: 18px
+      line-height: 31px
+      color: #FFFFFF
+      overflow: hidden
+
+.article
+
+  h2
+    font-weight: 500
+    font-size: 18px
+    line-height: 21px
+    margin: 0 0 30px 0
+
+  p
+    font-size: 16px
+    line-height: 31px
+    margin: 0 0 30px
+
+  ol
+    padding-left: 25px
+    li
+      margin-bottom: 18px
+      font-size: 16px
+      line-height: 31px
+  img
+    max-width: 100%
+    object-fit: cover
+
+.other
+  &-news
+    &__wrapper
+      text-align: center
+
+.news
+
+  &-title
+
+    &__line
+      margin: 0 auto 55px
+
+@media (max-width : 1200px)
+  // .page
+  //   &-title
+  //     font-size: 32px
+
+  // .news
+  //   &-title
+  //     font-size: 34px
+  // .contacts
+  //   &-title
+  //     font-size: 34px
+  .article
+    p
+      line-height: normal
+@media (max-width : 1024px)
+  .page
+    &-top
+      flex-wrap: wrap
+    &-title
+      flex-grow: 1
+      &__span
+        flex-shrink: 1
+
+@media (max-width : 992px)
+  .page
+    padding: 30px 0 50px 0
+    &-title
+      font-size: 29px
+      // margin-bottom: 20px
+      &__span
+        order: -1
+        margin-bottom: 20px
+  .article
+    img
+      margin: 15px 0 0 0
+      text-align: center
+  .news
+
+    &-title
+
+      &__line
+        margin: 0 auto 25px
+
+@media (max-width : 768px)
+  .header
+    &-bottom
+      &__nav
+        li
+          font-size: 15px
+          a
+            font-size: 15px
+  .page
+    &-top
+      justify-content: center
+      margin: 0 0 20px 0
+    &-title
+      text-align: center
+      font-size: 30px
+      line-height: normal
+  .article
+    h2
+      margin: 0 0 20px 0
+    p
+      margin: 0 0 10px
+    ol
+      li
+        margin-bottom: 8px
+        line-height: normal
+  .news
+    &-title
+      &__line
+        margin: 0 auto 20px
+    &-item
+      margin-top: 20px
+    // &-item:nth-child(3)
+    //   display: block
+
+@media (max-width : 576px)
+  .header
+    &-bottom
+      display: none
+  .article
+    p
+      font-size: 15px
+    ol
+      padding-left: 15px
+      li
+        font-size: 15px
+        margin-bottom: 5px
+    img
+      width: 400px
+
+@media (max-width : 425px)
+  .page
+    padding: 20px 0 30px 0
+    &-title
+      font-size: 29px
+      &__span
+        width: 104px
+        height: 30px
+  .article
+    img
+      width: 300px
+  .news
+    &-item
+      width: 100%
+@media (max-width : 375px)
+  .page
+    &-title
+      font-size: 26px
+  .news
+    &-title
+      font-size: 28px
+    &-subtitle
+      font-size: 17px
+  .contacts
+    &-title
+      font-size: 28px
