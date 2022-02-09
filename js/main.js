@@ -44,10 +44,10 @@ $(function() {
         if($(this).data('index') == "all") {
             $('.gallery-item').fadeIn();
             $('.gallery-button').hide();
-            $('.gallery-links a').removeClass('active')
+            $('.gallery-links a').removeClass('active');
             $(this).addClass('active');
         } else {
-            $('.gallery-links a').removeClass('active')
+            $('.gallery-links a').removeClass('active');
             $(this).addClass('active');
             let index = $(this).data('index');
             console.log(index);
